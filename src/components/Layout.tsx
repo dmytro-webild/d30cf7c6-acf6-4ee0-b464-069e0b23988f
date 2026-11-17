@@ -51,7 +51,8 @@ export default function Layout() {
       <footer data-webild-section="Footer" data-section="footer" className="relative z-10" data-terrain="calm">
         <FooterHorizonMark
           brand="LuroCraft"
-          coordinates="N 30.26 / W 97.74"
+          location="Toronto, Ontario"
+          coordinates="N 43.65 / W 79.38"
           copyright="© 2026 LuroCraft Inc. All rights reserved."
           backToTop={{
             text: "Back to top",
