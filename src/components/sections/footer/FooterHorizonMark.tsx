@@ -70,7 +70,7 @@ const FooterHorizonMark = ({
   const rightX = useTransform(scrollYProgress, [0.1, 1], reduce ? ["0cqi", "0cqi"] : ["8cqi", "0cqi"]);
 
   const [first, second, spaced] = splitMark(brand);
-  const markSize = `${Math.min(24, 100 / Math.max(1, brand.length * 0.56)).toFixed(2)}cqi`;
+  const markSize = `${Math.min(14, 100 / Math.max(1, brand.length * 0.78)).toFixed(2)}cqi`;
 
   return (
     <section
