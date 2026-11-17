@@ -54,7 +54,7 @@ const ChannelLine = ({ item, index, progress, reduce }: ChannelLineProps) => {
       <p aria-hidden={item.channel ? undefined : true} className="font-mono text-[length:var(--text-label)] uppercase leading-none text-muted-foreground lg:justify-self-start">{channel}</p>
       <motion.h3
         style={reduce ? undefined : { x }}
-        className="max-w-full text-balance text-center text-[length:var(--text-h1)] uppercase leading-[0.92] will-change-transform [overflow-wrap:anywhere]"
+        className="max-w-full text-balance text-center text-[length:var(--text-h3)] lg:text-[length:var(--text-h2)] uppercase leading-[1.1] will-change-transform [overflow-wrap:anywhere]"
       >
         {item.title}
       </motion.h3>
