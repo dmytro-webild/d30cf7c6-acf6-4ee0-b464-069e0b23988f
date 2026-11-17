@@ -46,7 +46,7 @@ const splitMark = (brand: string): [string, string, boolean] => {
 const FooterHorizonMark = ({
   brand = "Northfield",
   coordinates = "N 59.33 / E 18.06",
-  location = "Stockholm, Sweden",
+  location,
   copyright = "© 2026 Northfield Labs",
   backToTop = { text: "Back to top", href: "#hero" },
   legal = [{ text: "Privacy", href: "#" }],
@@ -101,8 +101,8 @@ const FooterHorizonMark = ({
             <CornerTicks />
 
             <div className="flex items-start justify-between gap-4 px-[clamp(0.75rem,1.5vw,1.25rem)] pt-[clamp(0.75rem,1.5vw,1.25rem)] text-[length:var(--text-label)] uppercase text-muted-foreground">
-              <p>{location}</p>
-              <a href={backToTop.href} className="whitespace-nowrap text-foreground transition-opacity duration-300 hover:opacity-70">
+              {location && <p>{location}</p>}
+              <a href={backToTop.href} className="ml-auto whitespace-nowrap text-foreground transition-opacity duration-300 hover:opacity-70">
                 {backToTop.text} ↑
               </a>
             </div>
