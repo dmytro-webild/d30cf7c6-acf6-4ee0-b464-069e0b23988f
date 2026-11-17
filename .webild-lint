@@ -1,0 +1,10 @@
+src/components/Layout.tsx
+src/components/sections/contact/ContactBeaconForm.tsx
+src/components/sections/faq/FaqLogIndex.tsx
+src/components/sections/features/ProcessTransectRail.tsx
+src/components/sections/features/ServicesStackedChannels.tsx
+src/components/sections/footer/FooterHorizonMark.tsx
+src/components/sections/gallery/GallerySurveyStack.tsx
+src/components/sections/hero/HeroSplitHorizon.tsx
+src/components/sections/pricing/PricingSpecSheet.tsx
+src/pages/HomePage.tsx
