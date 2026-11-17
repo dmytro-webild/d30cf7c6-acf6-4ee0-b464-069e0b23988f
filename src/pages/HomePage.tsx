@@ -124,7 +124,7 @@ export default function HomePage() {
               title: "Landscaping estimate scheduling",
               category: "Landscaping",
               meta: "24/7 instant intake",
-              imageSrc: "https://img.b2bpic.net/free-photo/analyzing-statistics_1098-12863.jpg",
+              imageSrc: "https://img.b2bpic.net/free-photo/analyzing-statistics_1098-12863.jpg?_wi=1",
               imageAlt: "Landscaping business manager reviewing schedule"
             },
             {
@@ -146,7 +146,7 @@ export default function HomePage() {
             {
               title: "1. Forward your phone line",
               description: "Connect your existing business phone number to LuroCraft using simple conditional call forwarding in seconds.",
-              imageSrc: "https://img.b2bpic.net/free-photo/analyzing-statistics_1098-12863.jpg",
+              imageSrc: "https://img.b2bpic.net/free-photo/analyzing-statistics_1098-12863.jpg?_wi=2",
               imageAlt: "Call line forwarding configuration"
             },
             {
