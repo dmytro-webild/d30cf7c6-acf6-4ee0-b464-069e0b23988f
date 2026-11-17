@@ -24,7 +24,7 @@ const defaultItems: Question[] = [
   { title: "How long does a first study take?", description: "Most first studies run six to ten weeks, from data audit to a working model and a written report your team can act on." },
 ];
 
-const FaqLogIndex = ({ label = "Questions", title = "Before we start", button, items = defaultItems, ariaLabel, className }: FaqLogIndexProps) => {
+const FaqLogIndex = ({ label, title = "FAQ", button, items = defaultItems, ariaLabel, className }: FaqLogIndexProps) => {
   const reduce = useReducedMotion() ?? false;
   const kit = useKitMotion();
   const [open, setOpen] = useState(0);
@@ -38,7 +38,7 @@ const FaqLogIndex = ({ label = "Questions", title = "Before we start", button, i
         <CornerTicks />
         <div className="lg:col-span-4">
           <div className="flex flex-col gap-[clamp(1.25rem,2vw,1.75rem)] lg:sticky lg:top-[clamp(5rem,12svh,8rem)]">
-            {label && <ScrambleLabel prefix="+ " text={label} duration={0.6} className="text-[length:var(--text-label)] uppercase leading-none text-muted-foreground" />}
+            {label ? <ScrambleLabel prefix="+ " text={label} duration={0.6} className="text-[length:var(--text-label)] uppercase leading-none text-muted-foreground" /> : null}
             {title && (
               <h2 className="text-balance text-[length:var(--text-h1)] leading-[var(--heading-leading)] tracking-[var(--heading-tracking)] [overflow-wrap:anywhere]">
                 <div className="sr-only">{title}</div>

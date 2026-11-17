@@ -167,8 +167,7 @@ export default function HomePage() {
 
       <div id="faq" data-webild-section="FaqLogIndex" data-webild-section-id="FaqLogIndex-1" data-section="faq" className="relative z-10" data-terrain="valley">
         <FaqLogIndex
-          label="FAQ"
-          title="Frequently asked questions"
+          title="FAQ"
           button={{
             text: "Book a Free Demo",
             href: "#contact"
