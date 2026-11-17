@@ -90,8 +90,8 @@ export default function Layout() {
               title: "Company",
               items: [
                 {
-                  text: "Pricing",
-                  href: "#pricing"
+                  text: "About LuroCraft",
+                  href: "#hero"
                 },
                 {
                   text: "FAQ",

@@ -2,7 +2,6 @@ import HeroSplitHorizon from "@/components/sections/hero/HeroSplitHorizon";
 import ServicesStackedChannels from "@/components/sections/features/ServicesStackedChannels";
 import GallerySurveyStack from "@/components/sections/gallery/GallerySurveyStack";
 import ProcessTransectRail from "@/components/sections/features/ProcessTransectRail";
-import PricingSpecSheet from "@/components/sections/pricing/PricingSpecSheet";
 import FaqLogIndex from "@/components/sections/faq/FaqLogIndex";
 import ContactBeaconForm from "@/components/sections/contact/ContactBeaconForm";
 import TerrainDotStage from "@/components/kit/TerrainDotStage";
@@ -11,9 +10,7 @@ import LoaderCrosshairLock from "@/components/loaders/LoaderCrosshairLock";
 export default function HomePage() {
   return (
     <>
-      <TerrainDotStage
-
-      />
+      <TerrainDotStage />
 
       <LoaderCrosshairLock
         brand="LuroCraft"
@@ -23,8 +20,8 @@ export default function HomePage() {
       <div id="hero" data-webild-section="HeroSplitHorizon" data-webild-section-id="HeroSplitHorizon-1" data-section="hero" className="relative z-10" data-terrain="rise" data-scene>
         <HeroSplitHorizon
           titleTop="Never Miss"
-          titleBottom="Customer Calls"
-          description="Your AI receptionist answers calls, books appointments, and handles customer inquiries 24/7."
+          titleBottom="Another Customer Call."
+          description="Your AI receptionist answers calls, books appointments, and handles customer inquiries 24/7 — so you can focus on growing your business."
           readout={{
             value: "24/7 AI",
             label: "Zero missed leads and instant booking"
@@ -35,7 +32,7 @@ export default function HomePage() {
             elevation: 149
           }}
           primaryButton={{
-            text: "Book Free Demo",
+            text: "Book a Free Demo",
             href: "#contact"
           }}
           secondaryButton={{
@@ -53,34 +50,34 @@ export default function HomePage() {
           title="Built for high-volume business calls"
           items={[
             {
-              title: "CALL ANSWERING",
-              description: "Answers every incoming call on the first ring 24/7.",
+              title: "24/7 CALL ANSWERING",
+              description: "Answers every incoming call on the first ring 24/7 with zero delay.",
               channel: "CH 01"
             },
             {
-              title: "AUTO BOOKING",
-              description: "Syncs with GoHighLevel to book appointments automatically.",
+              title: "APPOINTMENT BOOKING",
+              description: "Syncs directly with your calendar to schedule appointments automatically.",
               channel: "CH 02"
             },
             {
-              title: "NATURAL SPEECH",
-              description: "Delivers fluid human-like dialogue tuned to your business.",
+              title: "NATURAL HUMAN SPEECH",
+              description: "Delivers fluid human-like conversations tuned to your specific business.",
               channel: "CH 03"
             },
             {
-              title: "PARALLEL CALLS",
-              description: "Handles infinite simultaneous calls with zero hold times.",
+              title: "SIMULTANEOUS CALLS",
+              description: "Handles infinite simultaneous calls so your callers never hear a busy signal.",
               channel: "CH 04"
             },
             {
-              title: "CALENDAR SYNC",
-              description: "Prevents double booking by updating schedules instantly.",
+              title: "CALENDAR INTEGRATION",
+              description: "Prevents double booking by updating schedules and CRM records instantly.",
               channel: "CH 05"
             }
           ]}
           note="Never miss a qualified lead again."
           linkButton={{
-            text: "Book Free Demo",
+            text: "Book a Free Demo",
             href: "#contact"
           }}
         />
@@ -88,47 +85,54 @@ export default function HomePage() {
 
       <div id="gallery" data-webild-section="GallerySurveyStack" data-webild-section-id="GallerySurveyStack-1" data-section="gallery" className="relative z-10" data-terrain="valley" data-scene>
         <GallerySurveyStack
-          label="Industry solutions"
+          label="INDUSTRIES SERVED"
           title="Tailored AI voice workflows"
           linkButton={{
-            text: "Book demo",
+            text: "Book a Free Demo",
             href: "#contact"
           }}
           items={[
             {
               title: "Chiropractic booking automation",
-              category: "Healthcare",
+              category: "Chiropractic",
               meta: "2,400 calls / month",
               imageSrc: "https://img.b2bpic.net/free-photo/physical-therapist-looking-male-athlete-with-cervical-collar-filling-medical-form-reception-counter-hospital_662251-1713.jpg",
-              imageAlt: "Physical therapist looking at male athlete with cervical collar filling medical form at reception counter in hospital"
+              imageAlt: "Physical therapist looking at patient at reception desk"
             },
             {
               title: "Dental emergency call routing",
               category: "Dental",
               meta: "0s average hold time",
               imageSrc: "https://img.b2bpic.net/free-photo/indian-medic-consulting-her-patient-medical-facility-copy-space_482257-118298.jpg",
-              imageAlt: "Indian medic consulting her patient in medical facility next to copy space"
+              imageAlt: "Dental receptionist consulting patient"
             },
             {
               title: "HVAC dispatch & scheduling",
-              category: "Field service",
-              meta: "100% capture rate",
+              category: "HVAC",
+              meta: "100% lead capture",
               imageSrc: "https://img.b2bpic.net/free-photo/elevated-view-senior-man-holding-digital-tablet_23-2147859719.jpg",
-              imageAlt: "Elevated view of senior man holding digital tablet"
+              imageAlt: "HVAC technician scheduling on digital tablet"
             },
             {
               title: "Plumbing inquiry booking",
-              category: "Home services",
+              category: "Plumbing",
               meta: "3x lead conversion",
               imageSrc: "https://img.b2bpic.net/free-photo/senior-holding-mockup-tablet_23-2148346198.jpg",
-              imageAlt: "Senior holding a mockup tablet"
+              imageAlt: "Plumbing service call scheduling"
+            },
+            {
+              title: "Landscaping estimate scheduling",
+              category: "Landscaping",
+              meta: "24/7 instant intake",
+              imageSrc: "https://img.b2bpic.net/free-photo/analyzing-statistics_1098-12863.jpg",
+              imageAlt: "Landscaping business manager reviewing schedule"
             },
             {
               title: "Salon appointment matrix",
-              category: "Wellness",
+              category: "Salons & Spas",
               meta: "99% calendar accuracy",
               imageSrc: "https://img.b2bpic.net/free-photo/woman-watching-tablet-while-chilling-sofa_23-2147670449.jpg",
-              imageAlt: "Woman watching tablet while chilling on sofa"
+              imageAlt: "Salon appointment booking on tablet"
             }
           ]}
         />
@@ -136,97 +140,26 @@ export default function HomePage() {
 
       <div id="process" data-webild-section="ProcessTransectRail" data-webild-section-id="ProcessTransectRail-1" data-section="process" className="relative z-10" data-terrain="valley" data-scene>
         <ProcessTransectRail
-          label="Simple Setup"
-          title="Live in under 15 minutes"
+          label="HOW IT WORKS"
+          title="Get started in 3 simple steps"
           items={[
             {
-              title: "Forward your call line",
-              description: "Connect your existing business phone line to LuroCraft using standard conditional call forwarding in seconds.",
+              title: "1. Forward your phone line",
+              description: "Connect your existing business phone number to LuroCraft using simple conditional call forwarding in seconds.",
               imageSrc: "https://img.b2bpic.net/free-photo/analyzing-statistics_1098-12863.jpg",
-              imageAlt: "Analyzing statistics"
+              imageAlt: "Call line forwarding configuration"
             },
             {
-              title: "Configure AI rules",
-              description: "Upload your custom FAQs, office hours, and greeting rules to train your dedicated voice agent.",
+              title: "2. Configure AI & calendar",
+              description: "Upload your business FAQs, operating hours, and sync your calendar so your AI receptionist knows how to book.",
               imageSrc: "https://img.b2bpic.net/free-photo/women-sideways-working-from-their-desk_23-2148463301.jpg",
-              imageAlt: "Women sideways working from their desk"
+              imageAlt: "Configuring AI assistant rules"
             },
             {
-              title: "Sync your calendar",
-              description: "Link your booking platform so your receptionist schedules appointments in real time without phone tag.",
+              title: "3. Activate 24/7 AI coverage",
+              description: "Launch instant call answering to capture every customer lead, answer inquiries, and book appointments 24/7.",
               imageSrc: "https://img.b2bpic.net/free-photo/mid-section-woman-using-digital-tablet_1170-484.jpg",
-              imageAlt: "Mid-section of woman using digital tablet"
-            },
-            {
-              title: "Activate 24/7 coverage",
-              description: "Launch instant call answering to capture every prospective client, day or night.",
-              imageSrc: "https://img.b2bpic.net/free-photo/programmers-data-center-using-mockup-tablet-observing-equipment-analytics_482257-125853.jpg",
-              imageAlt: "Programmers in data center using mockup tablet observing equipment analytics"
-            }
-          ]}
-        />
-      </div>
-
-      <div id="pricing" data-webild-section="PricingSpecSheet" data-webild-section-id="PricingSpecSheet-1" data-section="pricing" className="relative z-10" data-terrain="valley">
-        <PricingSpecSheet
-          label="Flexible Plans"
-          title="Transparent plans for growing service businesses"
-          items={[
-            {
-              title: "Starter Plan",
-              price: "$199",
-              period: "per month",
-              description: "Always-on voice AI answering and appointment scheduling for small teams.",
-              features: [
-                {
-                  label: "Monthly Calls",
-                  value: "500 minutes"
-                },
-                {
-                  label: "Setup Time",
-                  value: "Under 15 mins"
-                },
-                {
-                  label: "Integrations",
-                  value: "Calendar & CRM"
-                },
-                {
-                  label: "Support",
-                  value: "24/7 Automated"
-                }
-              ],
-              button: {
-                text: "Book Demo",
-                href: "#contact"
-              }
-            },
-            {
-              title: "Enterprise Plan",
-              price: "Custom",
-              period: "per month",
-              description: "High-volume call routing with custom integrations and dedicated support.",
-              features: [
-                {
-                  label: "Monthly Calls",
-                  value: "Unlimited"
-                },
-                {
-                  label: "Setup Time",
-                  value: "Custom Setup"
-                },
-                {
-                  label: "Integrations",
-                  value: "Custom API"
-                },
-                {
-                  label: "Support",
-                  value: "Dedicated Manager"
-                }
-              ],
-              button: {
-                text: "Contact Sales",
-                href: "#contact"
-              }
+              imageAlt: "24/7 AI receptionist active coverage"
             }
           ]}
         />
@@ -234,28 +167,24 @@ export default function HomePage() {
 
       <div id="faq" data-webild-section="FaqLogIndex" data-webild-section-id="FaqLogIndex-1" data-section="faq" className="relative z-10" data-terrain="valley">
         <FaqLogIndex
-          label="Questions"
-          title="Everything you need to know"
+          label="FAQ"
+          title="Frequently asked questions"
           button={{
-            text: "Book a Demo",
+            text: "Book a Free Demo",
             href: "#contact"
           }}
           items={[
             {
-              title: "How quickly can I setup?",
-              description: "Deployment takes less than 15 minutes after connecting your existing phone lines to LuroCraft."
+              title: "How quickly can I get set up?",
+              description: "Deployment takes less than 15 minutes by setting up standard call forwarding on your existing business phone line."
             },
             {
-              title: "Does it integrate with my CRM?",
-              description: "Yes, we offer native integrations with GoHighLevel, HubSpot, and most popular business CRM platforms."
+              title: "What phone numbers work with LuroCraft?",
+              description: "LuroCraft works with any existing business landline, mobile phone, or VoIP service provider."
             },
             {
-              title: "Is the pricing monthly?",
-              description: "Yes, all plans are flexible month-to-month subscriptions starting at $199 per month with no long-term contracts."
-            },
-            {
-              title: "What if the AI doesn't know an answer?",
-              description: "The AI is trained on your specific documentation to handle almost any query, and can forward complex calls directly to your team."
+              title: "Does it integrate with my calendar and CRM?",
+              description: "Yes, we offer native real-time sync with GoHighLevel, Google Calendar, Outlook, HubSpot, and top CRM platforms."
             },
             {
               title: "Can the AI receptionist handle simultaneous calls?",
@@ -263,7 +192,11 @@ export default function HomePage() {
             },
             {
               title: "How does automated appointment booking work?",
-              description: "The AI syncs directly with your GoHighLevel calendar in real time to schedule, confirm, and update bookings during the call."
+              description: "The AI checks your live calendar availability and schedules, confirms, or updates bookings directly during the call."
+            },
+            {
+              title: "What if a caller asks something unexpected?",
+              description: "The AI receptionist is trained on your specific documentation to handle almost any inquiry, and can seamlessly forward complex calls to your team."
             }
           ]}
         />
@@ -298,16 +231,17 @@ export default function HomePage() {
               name: "industry",
               label: "Industry",
               type: "text",
-              placeholder: "Dental, HVAC, Plumbing, or Salon"
+              placeholder: "Chiropractic, Dental, Plumbing, HVAC, Landscaping, or Salon"
             }
           ]}
           submitText="Book Free Demo"
-          successText="Request received. We will contact you soon."
+          successText="Request received. We will contact you shortly to schedule your demo."
           imageSrc="https://img.b2bpic.net/free-photo/laptop-phone-notebook-office-desk_181624-25209.jpg"
-          imageAlt="Laptop, phone, and notebook on the office desk"
+          imageAlt="Laptop, phone, and notebook on office desk"
           meta="24/7 AI Communication Platform"
         />
       </div>
     </>
   );
 }
+
