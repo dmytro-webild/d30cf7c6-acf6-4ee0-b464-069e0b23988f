@@ -52,7 +52,6 @@ export default function Layout() {
         <FooterHorizonMark
           brand="LuroCraft"
           coordinates="N 30.26 / W 97.74"
-          location="Austin, Texas"
           copyright="© 2026 LuroCraft Inc. All rights reserved."
           backToTop={{
             text: "Back to top",
