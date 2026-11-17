@@ -28,13 +28,19 @@ const DEFAULT_COLUMNS: FooterColumn[] = [
 ];
 
 const splitMark = (brand: string): [string, string, boolean] => {
-  const words = brand.trim().split(/\s+/);
+  const trimmed = brand.trim();
+  const words = trimmed.split(/\s+/);
   if (words.length > 1) {
     const cut = Math.ceil(words.length / 2);
     return [words.slice(0, cut).join(" "), words.slice(cut).join(" "), true];
   }
-  const mid = Math.ceil(brand.length / 2);
-  return [brand.slice(0, mid), brand.slice(mid), false];
+  const camelWords = trimmed.replace(/([a-z0-9])([A-Z])/g, "$1 $2").split(" ");
+  if (camelWords.length > 1) {
+    const cut = Math.ceil(camelWords.length / 2);
+    return [camelWords.slice(0, cut).join(""), camelWords.slice(cut).join(""), false];
+  }
+  const mid = Math.ceil(trimmed.length / 2);
+  return [trimmed.slice(0, mid), trimmed.slice(mid), false];
 };
 
 const FooterHorizonMark = ({
