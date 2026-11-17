@@ -45,24 +45,27 @@ const ChannelLine = ({ item, index, progress, reduce }: ChannelLineProps) => {
   const channel = item.channel ?? `Ch ${String(index + 1).padStart(2, "0")}`;
 
   return (
-    <li className="relative flex flex-col items-center gap-2 py-[clamp(0.75rem,1.4vw,1.25rem)] lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:items-baseline lg:gap-[var(--gap)]">
+    <li className="relative flex flex-col items-center gap-2 py-[clamp(0.75rem,1.4vw,1.25rem)] lg:grid lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] lg:items-center lg:gap-[var(--gap)]">
       <motion.div
         aria-hidden="true"
         style={reduce ? undefined : { scaleX: rule }}
         className="absolute inset-x-0 bottom-0 h-px origin-center bg-[color-mix(in_srgb,var(--foreground)_12%,transparent)]"
       />
       <p aria-hidden={item.channel ? undefined : true} className="font-mono text-[length:var(--text-label)] uppercase leading-none text-muted-foreground lg:justify-self-start">{channel}</p>
-      <motion.h3
+      <motion.div
         style={reduce ? undefined : { x }}
-        className="max-w-full text-balance text-center text-[length:var(--text-h3)] lg:text-[length:var(--text-h2)] uppercase leading-[1.1] will-change-transform [overflow-wrap:anywhere]"
+        className="flex flex-col items-center text-center gap-1.5 will-change-transform"
       >
-        {item.title}
-      </motion.h3>
-      {item.description && (
-        <p className="max-w-[22rem] text-balance text-center text-[length:var(--text-small)] leading-[1.45] text-muted-foreground lg:justify-self-end lg:text-right">
-          {item.description}
-        </p>
-      )}
+        <h3 className="max-w-full text-balance text-center text-[length:var(--text-h3)] lg:text-[length:var(--text-h2)] uppercase leading-[1.1] [overflow-wrap:anywhere]">
+          {item.title}
+        </h3>
+        {item.description && (
+          <p className="max-w-[26rem] text-balance text-center text-[length:var(--text-small)] leading-[1.45] text-foreground">
+            {item.description}
+          </p>
+        )}
+      </motion.div>
+      <div className="hidden lg:block" aria-hidden="true" />
     </li>
   );
 };
