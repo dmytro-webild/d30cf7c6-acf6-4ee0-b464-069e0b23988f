@@ -14,7 +14,7 @@ export default function HomePage() {
 
       <LoaderCrosshairLock
         brand="LuroCraft"
-        coordinates="N 30.26 / W 97.74"
+        coordinates="N 43.65 / W 79.38"
       />
 
       <div id="hero" data-webild-section="HeroSplitHorizon" data-webild-section-id="HeroSplitHorizon-1" data-section="hero" className="relative z-10" data-terrain="rise" data-scene>
@@ -27,8 +27,8 @@ export default function HomePage() {
             label: "Zero missed leads and instant booking"
           }}
           beacon={{
-            label: "Austin HQ",
-            coordinates: "N 30.26 / W 97.74",
+            label: "Toronto HQ",
+            coordinates: "N 43.65 / W 79.38",
             elevation: 149
           }}
           primaryButton={{
