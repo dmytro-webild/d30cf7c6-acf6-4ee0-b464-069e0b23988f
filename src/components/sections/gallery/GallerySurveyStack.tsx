@@ -74,7 +74,6 @@ const Card = ({ item, index, total, progress }: CardProps) => {
               <p aria-hidden="true">{pad(index + 1)}</p>
               <p aria-hidden="true" className="text-muted-foreground">/ {pad(total)}</p>
             </div>
-            {item.meta && <p className="hidden font-mono text-[length:var(--text-label)] uppercase leading-none text-muted-foreground lg:block">{item.meta}</p>}
           </motion.div>
           <div className="flex flex-col gap-[0.625rem] lg:gap-[1rem]">
             {item.category && <p className="text-[length:var(--text-label)] uppercase leading-none text-muted-foreground">{item.category}</p>}
