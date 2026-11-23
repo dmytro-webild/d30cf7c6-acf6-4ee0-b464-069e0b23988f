@@ -103,7 +103,7 @@ export default function HomePage() {
               title: "Dental emergency call routing",
               category: "Dental",
               meta: "0s average hold time",
-              imageSrc: "https://img.b2bpic.net/free-photo/indian-medic-consulting-her-patient-medical-facility-copy-space_482257-118298.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3K0aa19UHoT6DytXIGbvco08Y93/uploaded-1795457563208-fzaoa89i.png",
               imageAlt: "Dental receptionist consulting patient"
             },
             {
