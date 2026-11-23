@@ -110,14 +110,14 @@ export default function HomePage() {
               title: "HVAC dispatch & scheduling",
               category: "HVAC",
               meta: "100% lead capture",
-              imageSrc: "https://img.b2bpic.net/free-photo/elevated-view-senior-man-holding-digital-tablet_23-2147859719.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3K0aa19UHoT6DytXIGbvco08Y93/uploaded-1792082906184-telyfxng.png",
               imageAlt: "HVAC technician scheduling on digital tablet"
             },
             {
               title: "Plumbing inquiry booking",
               category: "Plumbing",
               meta: "3x lead conversion",
-              imageSrc: "https://img.b2bpic.net/free-photo/senior-holding-mockup-tablet_23-2148346198.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3K0aa19UHoT6DytXIGbvco08Y93/uploaded-1791855090107-w75vsijh.png",
               imageAlt: "Plumbing service call scheduling"
             },
             {
