@@ -124,14 +124,14 @@ export default function HomePage() {
               title: "Landscaping estimate scheduling",
               category: "Landscaping",
               meta: "24/7 instant intake",
-              imageSrc: "https://img.b2bpic.net/free-photo/analyzing-statistics_1098-12863.jpg?_wi=1",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3K0aa19UHoT6DytXIGbvco08Y93/uploaded-1792089113177-b7remzsa.png",
               imageAlt: "Landscaping business manager reviewing schedule"
             },
             {
               title: "Salon appointment matrix",
               category: "Salons & Spas",
               meta: "99% calendar accuracy",
-              imageSrc: "https://img.b2bpic.net/free-photo/woman-watching-tablet-while-chilling-sofa_23-2147670449.jpg",
+              imageSrc: "https://storage.googleapis.com/webild/users/user_3K0aa19UHoT6DytXIGbvco08Y93/uploaded-1792087893080-smeekzgd.png",
               imageAlt: "Salon appointment booking on tablet"
             }
           ]}
